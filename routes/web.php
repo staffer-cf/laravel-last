@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/greeting', function () {
+    return 'Hello World';
+});
+
+
+//
+//
+//Route::get('/test', function () {
+//    return view('welcome');
+//});
+//
+//
+//Route::get('/message/index', 'MessageController@index');
+//Route::get('/message/send', 'MessageController@send');
+//
+////Route::get('/message/test', 'MessageController@test');
+//
+//Route::get('/message/test', ['uses'=>'MessageController@test']);
+
+
+
